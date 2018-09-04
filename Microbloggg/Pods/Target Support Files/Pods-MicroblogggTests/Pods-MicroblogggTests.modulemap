@@ -1,0 +1,6 @@
+framework module Pods_MicroblogggTests {
+  umbrella header "Pods-MicroblogggTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

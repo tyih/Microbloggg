@@ -1,0 +1,28 @@
+
+[
+    {
+        "vc": "NewsViewController",
+        "title": "",
+        "image": "tabbar_news"
+    },
+    {
+        "vc": "MessageViewController",
+        "title": "",
+        "image": "tabbar_message"
+    },
+    {
+        "vc": "NullViewController",
+        "title": "",
+        "image": ""
+    },
+    {
+        "vc": "DiscoverViewController",
+        "title": "",
+        "image": "tabbar_discover"
+    },
+    {
+        "vc": "ProfileViewController",
+        "title": "",
+        "image": "tabbar_profile"
+    }
+]
