@@ -13,12 +13,12 @@ class MainViewController: UITabBarController {
     private lazy var rocketButton: UIButton = {
         let btn = UIButton()
         
-        let image = UIImage.init(icon: FAType.FARocket, size: CGSize(width: 40, height: 40), textColor: kGrayColor)
-        let imageH = UIImage.init(icon: FAType.FARocket, size: CGSize(width: 40, height: 40), textColor: kRedColor)
-        btn.setImage(image, for: .normal)
-        btn.setImage(imageH, for: .highlighted)
-//        btn.setImage(UIImage(named: "tabbar_rocket"), for: .normal)
-//        btn.setImage(UIImage(named: "tabbar_rocket_highlighted"), for: .highlighted)
+//        let image = UIImage.init(icon: FAType.FARocket, size: CGSize(width: 40, height: 40), textColor: kGrayColor)
+//        let imageH = UIImage.init(icon: FAType.FARocket, size: CGSize(width: 40, height: 40), textColor: kRedColor)
+//        btn.setImage(image, for: .normal)
+//        btn.setImage(imageH, for: .highlighted)
+        btn.setImage(UIImage(named: "tabbar_rocket"), for: .normal)
+        btn.setImage(UIImage(named: "tabbar_rocket_highlighted"), for: .highlighted)
 
         btn.addTarget(self, action: #selector(rocketBtnClick), for: .touchUpInside)
         return btn
@@ -104,7 +104,7 @@ class MainViewController: UITabBarController {
         vc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
         vc.title = title
         
-        let nav = UINavigationController()
+        let nav = BaseNavigationController()
         nav.addChildViewController(vc)
         addChildViewController(nav)
     }
@@ -134,7 +134,7 @@ class MainViewController: UITabBarController {
         }
         vc.title = title
         
-        let nav = UINavigationController()
+        let nav = BaseNavigationController()
         nav.addChildViewController(vc)
         addChildViewController(nav)
     }

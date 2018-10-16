@@ -19,6 +19,9 @@
 		71AEE2F3213E27A500D6C646 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71AEE2F2213E27A500D6C646 /* FontAwesome.ttf */; };
 		71AEE2F5213E27BE00D6C646 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE2F4213E27BE00D6C646 /* FAIcon.swift */; };
 		71AEE2F8213E3C6C00D6C646 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE2F7213E3C6C00D6C646 /* UIColor+Extension.swift */; };
+		71AEE2FB213E527A00D6C646 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE2FA213E527A00D6C646 /* BaseViewController.swift */; };
+		71AEE2FD213E52A400D6C646 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE2FC213E52A400D6C646 /* BaseNavigationController.swift */; };
+		71AEE2FF213E53BC00D6C646 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE2FE213E53BC00D6C646 /* UserDefaults+Extension.swift */; };
 		71D98BB6213A39B300D60DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D98BB5213A39B300D60DCF /* AppDelegate.swift */; };
 		71D98BB8213A39B300D60DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D98BB7213A39B300D60DCF /* ViewController.swift */; };
 		71D98BBB213A39B300D60DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D98BB9213A39B300D60DCF /* Main.storyboard */; };
@@ -62,6 +65,9 @@
 		71AEE2F2213E27A500D6C646 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		71AEE2F4213E27BE00D6C646 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
 		71AEE2F7213E3C6C00D6C646 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		71AEE2FA213E527A00D6C646 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		71AEE2FC213E52A400D6C646 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		71AEE2FE213E53BC00D6C646 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		71D98BB2213A39B300D60DCF /* Microbloggg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Microbloggg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D98BB5213A39B300D60DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71D98BB7213A39B300D60DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		7191CE1F213D2A89002922AD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				71AEE2F9213E526000D6C646 /* Base */,
 				71922767213D7BED005BC5C2 /* Common */,
 				7191CE29213D6E15002922AD /* Profile */,
 				7191CE28213D6E0A002922AD /* Discover */,
@@ -208,8 +215,18 @@
 			isa = PBXGroup;
 			children = (
 				71AEE2F7213E3C6C00D6C646 /* UIColor+Extension.swift */,
+				71AEE2FE213E53BC00D6C646 /* UserDefaults+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		71AEE2F9213E526000D6C646 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				71AEE2FA213E527A00D6C646 /* BaseViewController.swift */,
+				71AEE2FC213E52A400D6C646 /* BaseNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		71D98BA9213A39B300D60DCF = {
@@ -512,11 +529,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AEE2FD213E52A400D6C646 /* BaseNavigationController.swift in Sources */,
 				7191CE25213D2B57002922AD /* MainViewController.swift in Sources */,
 				71D98BB8213A39B300D60DCF /* ViewController.swift in Sources */,
 				71D98BB6213A39B300D60DCF /* AppDelegate.swift in Sources */,
 				71AEE2F8213E3C6C00D6C646 /* UIColor+Extension.swift in Sources */,
 				7191CE2F213D6EE8002922AD /* DiscoverViewController.swift in Sources */,
+				71AEE2FF213E53BC00D6C646 /* UserDefaults+Extension.swift in Sources */,
+				71AEE2FB213E527A00D6C646 /* BaseViewController.swift in Sources */,
 				71922769213D7C10005BC5C2 /* Common.swift in Sources */,
 				7191CE31213D6EF5002922AD /* ProfileViewController.swift in Sources */,
 				7191CE33213D6F19002922AD /* NullViewController.swift in Sources */,

@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // 判断是否是新版本
+        if UserDefaults.isNewVersion() {
+            MBprint("新版本")
+            // 显示新功能介绍页
+        }
+        
+        // 判断是否第一次启动
+        if UserDefaults.isFirstLaunch() {
+            // 显示新手指导页
+        }
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.rootViewController = MainViewController()
